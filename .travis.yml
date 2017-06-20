@@ -1,0 +1,24 @@
+---
+language: java
+jdk:
+  - oraclejdk8
+
+before_script:
+  # OS information
+  - uname -a
+
+  # CPU information
+  - cat /proc/cpuinfo
+
+  # memory information
+  - cat /proc/meminfo
+  - free -m
+
+  # network information
+  - netstat -lntu
+
+  # running process information
+  - ps aux
+
+  # disk information
+  - df -h

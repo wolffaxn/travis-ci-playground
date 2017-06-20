@@ -24,5 +24,8 @@ cache:
   directories:
   - $HOME/.m2
 
-install: true
-script: ./mvnw clean install
+before_install:
+  - chmod +x mvnw
+
+install:
+  - ./mvnw clean install

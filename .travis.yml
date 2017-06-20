@@ -19,3 +19,10 @@ before_script:
 
   # disk information
   - df -h
+
+cache:
+  directories:
+  - $HOME/.m2
+
+install: true
+script: ./mvnw clean install
